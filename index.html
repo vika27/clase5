@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formas</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<!-- El método get solicita recurss de sólo lectura -->
+	<!-- El método post hace una petición de escritura -->
+	<!-- El método patch hace una petición de modificación -->
+	<!-- El método delete hace una petición de eliminación -->
+	<form action="/registro" method="post">
+		<h1>Formulario</h1>
+		<div class="field" id="name-container">
+			<label for="nombre">Nombre</label> <br>
+			<input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+			
+		</div>
+			<div class="field">
+			 <label for="Apellido">Apellido</label> <br>
+			 <input type="text" name="Apellido" id="apellido" placeholder="Tu apellido" autofocus required="">
+			
+		</div>
+	</div>
+	<!-- br es para dar saltos -->
+			<div class="field">
+			 <label for="email">E-mail</label> <br>
+			 <input type="email" name="email" id="email" placeholder="Tu e-mail" required="">
+			
+		</div>
+	 	</div>
+			<div class="field">
+			 <label for="sexo">Sexo</label> <br>
+			 <input type="radio" name="sexo" id="Hombre" required>
+			 <label for="Hombre">Hombre</label> 
+			 <input type="radio" name="sexo" id="Mujer" required="">
+			 <label for="Mujer">Mujer</label><br>
+			
+		</div>
+		<div class="field">
+			<select name="estado" id="estado">
+				<!-- disable selected se ultiliza cuando no quieres que se selecciona esa seccion -->
+				<option value="0" disabled selected="selecciona tu estado" required>selecciona tu estado</option>
+				<option value="1">Aguascalientes</option>
+				<option value="2">Mexico</option>
+			</select>
+		</div>
+	 		</div>
+			<div class="field">
+			 <label for="contraseña" required>Contraseña</label> <br>
+			 <input type="password" name="Contraseña" id="contraseña" placeholder="Tu contraseña" required="">
+			
+		</div>
+		<div class="field">
+			<label form="Mensaje">¿Por que te estas registrando?</label> <br>
+			<textarea name="mensaaje" id=" mensaje" cols="30" rows="5" placeholder="Escribe tu mensaje" required=""></textarea>
+		</div>
+		<div class="field">
+			<input type="checkbox" name="terminos" id="terminos" required="">
+			<label form="terminos">Acepto los <a href="/terminos" target="_blank" title="Términos y condiciones">térmidos y condiciones</label>
+		</div>
+		<div class="field">
+			<!-- son las diferentes maneras de poner boton de enviar -->
+			<!-- <button>Enviar</button>
+			<button type="submit">Enviar</button
+		    <input type="button" name="Enviar"> -->
+			<input type="submit" name="Enviar">
+
+			
+		</div>
+
+	 </form>
+	
+</body>
+</html>

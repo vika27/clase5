@@ -1,0 +1,110 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #F8ECE0;
+
+}
+form{
+	width: 60%;
+	max-width: 600px; /*Declara un límite máximo de ancho*/
+	min-width: 300px; /*Declara un límite mínimo de ancho*/
+	margin:0 auto; /*Declara valores para */
+}
+textarea,
+select,
+
+input { 
+width: 100%;
+background-color:#8181F7;
+padding: 10px;
+font-size: 16px;
+margin-top: 8px;
+border:1px solid #E2A9F3;
+}
+
+textarea {
+	resize: none;
+}
+}
+input[type="radio"],
+input[type="checkbox"],
+input[type="submit"] {
+	width:auto;
+
+
+}
+
+.field {
+	width: 100%;
+	float: left;
+	margin: 10px;
+}
+
+a{
+	color:#5882FA;
+}
+a:hover{
+	color:black;
+}
+a:active{
+	color:#A4A4A4;
+}
+
+a[href="#"]{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	background-color:#CEE3F6;
+	color:#A4A4A4;
+}
+
+input[type="text"]:focus {
+	background-color: #A9F5D0;
+}
+
+input:valid {
+	background-color: #81F79F;
+
+}
+
+input[type="checkbox"]:checked + label {
+	color:#8181F7;
+}
+
+#name-container > label {
+	background-color: #E0E0F8;
+}
+
+#name-container > label:first-child {
+	background-color: #F5A9A9;
+	color:#424242;
+}
+
+input[type="checkbox"] ,
+input[type="radio"] {
+	width: auto;
+}
+input[type="checkbox"] + label ,
+input[type="radio"] + label {
+	width: auto;
+	display: inline-block;
+}
+
+label{
+	width: 100%;
+	font-size: 16px;
+	text-align: left;
+	display: 
+}
+
+h1 {
+	text-align: center;
+}
+
